@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PW2N.TaskPages.CenturyPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ввод данных" FontSize="Body" Margin="10,15,0,0"/>
+            <Frame CornerRadius="5" Margin="10">
+                <StackLayout>
+                    <Label Text="Год"/>
+                    <Entry x:Name="Year" MaxLength="5" Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Результаты" FontSize="Body" Margin="10,0,0,0"/>
+            <Frame CornerRadius="5" Margin="10">
+                <StackLayout>
+                    <Label Text="Столетие"/>
+                    <Entry x:Name="Century" IsReadOnly="True"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="FindCentury" Text="Подсчитать" Margin="6" Clicked="FindCentury_Clicked"/>
+            <Button x:Name="Clear" Text="Очистить" Margin="6" Clicked="Clear_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

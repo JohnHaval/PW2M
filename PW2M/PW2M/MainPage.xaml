@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="MyMainPage" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PW2N.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to  Practical Work 2 by Hapro Bishop" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Выбор задачи" FontSize="Title" Padding="30,10,30,10"/>
+        <Button x:Name="SquareFinder" Text="Поиск площадей" Clicked="SquareFinder_Clicked" Margin="20"/>
+        <Button x:Name="CenturyFinder" Text="Поиск столетия" Clicked="CenturyFinder_Clicked" Margin="20"/>
+        <Label Text="Дополнительно" FontSize="Title" Padding="30,10,30,10"/>
+        <Button x:Name="Help" Text="Справка" Margin="20" Clicked="Help_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

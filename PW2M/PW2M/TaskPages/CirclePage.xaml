@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PW2N.TaskPages.CirclePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ввод данных" FontSize="Body" Margin="10,15,0,0"/>
+            <Frame CornerRadius="5" Margin="10">
+                <StackLayout>
+                    <Label Text="R1"/>
+                    <Entry x:Name="Radius1" MaxLength="5" Keyboard="Numeric"/>
+                    <Label Text="R2"/>
+                    <Entry x:Name="Radius2" MaxLength="5" Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Результаты" FontSize="Body" Margin="10,0,0,0"/>
+            <Frame CornerRadius="5" Margin="10">
+                <StackLayout>
+                    <Label Text="S1"/>
+                    <Entry x:Name="Square1" IsReadOnly="True"/>
+                    <Label Text="S2"/>
+                    <Entry x:Name="Square2" IsReadOnly="True"/>
+                    <Label Text="S3"/>
+                    <Entry x:Name="Square3" IsReadOnly="True"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="FindSquares" Text="Подсчитать" Margin="6" Clicked="FindSquares_Clicked"/>
+            <Button x:Name="Clear" Text="Очистить" Margin="6" Clicked="Clear_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
